@@ -9,7 +9,7 @@ var initFreshChat =
   document.body.appendChild(sheet);
   document.body.insertAdjacentHTML( 'beforeend', content );
 
-  function initialize(i,t){var e;i.getElementById(t)?initFreshChat():((e=i.createElement("script")).id=t,e.async=!0,e.src="https://wchat.freshchat.com/js/widget.js",e.onload=setupFreshchat,i.head.appendChild(e))}function initiateCall(){initialize(document,"Freshdesk Messaging-js-sdk")}window.addEventListener?window.addEventListener("load",initiateCall,!1):window.attachEvent("load",initiateCall,!1);
+  function initialize(i,t){var e;i.getElementById(t)?initFreshChat():((e=i.createElement("script")).id=t,e.async=!0,e.src=w.host+'/js/widget.js',e.onload=setupFreshchat,i.head.appendChild(e))}function initiateCall(){initialize(document,w.product+"-js-sdk")}window.addEventListener?window.addEventListener("load",initiateCall,!1):window.attachEvent("load",initiateCall,!1);
 
   var markedOpen = false;
   var init = false;
